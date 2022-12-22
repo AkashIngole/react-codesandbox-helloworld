@@ -6,6 +6,9 @@ const name = "Arjun";
 const fname = "Akash";
 const lname = "Ingole";
 
+const todaysDate = new Date().toLocaleDateString();
+const currentTime = new Date().toLocaleTimeString();
+
 console.log("Using template literals...");
 console.log(`My name is ${name}`);
 
@@ -18,6 +21,8 @@ ReactDOM.render(
     <p>My lucky number is {5 + 4} </p>
     <p>The random number is {Math.random()}</p>
     <p>{`My name is ${fname} ${lname}`}</p>
+    <p>Todays date = {todaysDate}</p>
+    <p>Current Time = {currentTime}</p>
   </>,
   document.getElementById("root")
 );
