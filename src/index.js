@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const name = 'Arjun';
+const name = "Arjun";
 
+const fname = "Akash";
+const lname = "Ingole";
+
+console.log("Using template literals...");
+console.log(`My name is ${name}`);
 
 ReactDOM.render(
   <>
@@ -12,6 +17,7 @@ ReactDOM.render(
     <h1>My name is {name}</h1>
     <p>My lucky number is {5 + 4} </p>
     <p>The random number is {Math.random()}</p>
+    <p>{`My name is ${fname} ${lname}`}</p>
   </>,
   document.getElementById("root")
 );
